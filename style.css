@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS RESET*/
+
+/*ANTENNA.IO STAR RATING*/
+.br-theme-fontawesome-stars .br-widget {
+  height: 28px;
+  white-space: nowrap;
+}
+.br-theme-fontawesome-stars .br-widget a {
+  font: normal normal normal 20px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  margin-right: 2px;
+}
+.br-theme-fontawesome-stars .br-widget a:after {
+  content: '\f005';
+  color: #d2d2d2;
+}
+.br-theme-fontawesome-stars .br-widget a.br-active:after {
+  color: #EDB867;
+}
+.br-theme-fontawesome-stars .br-widget a.br-selected:after {
+  color: #EDB867;
+}
+.br-theme-fontawesome-stars .br-widget .br-current-rating {
+  display: none;
+}
+.br-theme-fontawesome-stars .br-readonly a {
+  cursor: default;
+}
+@media print {
+  .br-theme-fontawesome-stars .br-widget a:after {
+    content: '\f006';
+    color: black;
+  }
+  .br-theme-fontawesome-stars .br-widget a.br-active:after,
+  .br-theme-fontawesome-stars .br-widget a.br-selected:after {
+    content: '\f005';
+    color: black;
+  }
+}
+/*ANTENNA.IO STAR RATING END*/
+
+/*GLOBALS*/
+.wrapper{
+	margin: 0 auto;
+	width: 1024px;
+	/*border: 1px solid red;*/
+	overflow: hidden;
+	padding: 0 30px;
+}
+
+.left{float: left;}
+.right{float: right;}
+
+a{text-decoration: none;}
+
+header, section{margin-bottom: 30px;}
+
+#equipment-block, #top-four-box, #daily-deal, .cycle-slide, .ab-tf{
+	/*border-radius: 8px;
+	border: 1px solid black;*/
+}
+
+h1{font-size: 28px;}
+h2{font-size: 23px;
+	color: #027290;
+}
+h3{font-size: 17px;}
+h4{font-size: 14px;}
+h5{font-size: 11px;}
+h6{font-size: 8px;}
+
+.social-media li{
+	display: inline-block;
+	padding-left: 15px;
+}
+
+/*BLACK BAR*/
+
+.black-bar{	
+	background: black;
+	padding: 5px 0;
+}
+
+.black-bar a{color: white;}
+
+/*HEADER*/
+header .header-nav li{
+	/*display: inline-block;*/
+	float:left;/*float:left instead of inline-block due to large empty space below the nav*/
+	overflow: hidden;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+header .header-nav li{
+	padding-top: 35px;
+	/*padding-bottom: 20px;*/
+}
+
+header #nav-logo{
+	background: url("img/logo.png") no-repeat;
+	width: 80px;
+	height: 80px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+header #nav-logo a{
+	display: block;
+	height: 100%;
+}
+
+#header-container{
+	background: black;
+}
+
+#header-container .wrapper{
+	background: url("img/misty.jpg") no-repeat;
+	padding: 15px 0;
+}
+
+/*SIDEBAR*/
+#sidebar-container{
+	background: #eedac8;
+	border-bottom: 3px solid #ac987e;
+}
+
+#sidebar{
+	padding: 10px 0;
+}
+
+#sidebar nav li{
+	float: left;
+	padding-left: 10px;
+}
+
+#sidebar input{
+	padding-right: 45%;
+	
+}
+
+#sidebar nav li, #sidebar input, #sidebar #sidebar-logo{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/*MAIN*/
+
+/*HERO*/
+.cycle-slideshow{
+	width: 580px;/*580px / 1024px * 100=56.6406%*/
+	max-width: 580px;
+	height: 250px;/*for testing purposes until I get proper images*/
+
+}
+
+.cycle-slideshow img{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.cycle-slideshow img.first{display: block;}
+
+/*DAILY DEAL*/
+#daily-deal h3{font-weight: bold;}
+
+#daily-deal #prd-img img{
+	width: 245px;
+	height: 140px;
+	padding-top: 50px;
+}
+
+#daily-deal #daily-prd{
+	padding-top: 50px;
+	padding-right: 40px;
+}
+
+#daily-deal #shop-deals{padding-top: 115px;}
+
+#daily-deal .pricebox{padding-bottom: 8px;}
+
+#daily-deal .pricebox #normal-price{text-decoration: line-through;}
+
+#daily-deal .sale-price{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#daily-deal #prd-container{overflow: hidden;}
+
+/*TOP 4*/
+section #top-four-menu{
+	width: 100%;
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+section #top-four-menu li{
+	float: left;
+	background: #d2d2d2;
+	padding: 10px 10px;
+}
+
+section #top-four-box{
+	width: 100%;
+	max-width: 1024px;
+	overflow: hidden;
+	/*border: 1px solid green;*/
+	background: #d2d2d2;
+}
+
+section #top-four-box #top-four-prev,section #top-four-box #top-four-next{
+	margin-top: 120px;
+}
+
+section #top-four-box li{
+	width: 180px;
+	float: left;
+	background:grey;
+	margin: 20px 0 15px 25px;
+}
+
+section #top-four-box ul{padding-left: 75px;}
+
+section #top-four-box .top-four-prd-img{
+	width: 160px;
+	height: 130px;
+	background: url("http://malsup.github.io/images/p1.jpg");
+	margin-bottom: 10px;
+}
+
+section #top-four-box .top-four-li-prd-container{padding: 10px 10px;}
+
+section #top-four-box .br-widget{padding: 7px 0 5px 0;}
+
+section #top-four-view-all {
+	text-align: center;
+	background: #d2d2d2;
+	width: 80px;
+	margin-left: 45%;
+	padding: 3px 3px;	
+}
+
+section #top-four-view-all a{text-align: center;}
+
+/*EQUIPMENT*/
+#equipment-block{width: 630px;}
+
+#equipment-block h2, #about-box h2{font-weight: bold;}
+
+#equipment-block ul li{
+	width: 180px;
+	border: 1px solid green;
+	display: inline-block;
+	margin: 16px 10px;
+}
+
+#equipment-block ul li .category-img{
+	width: 157px;
+	height: 157px;
+	border-radius: 100%;
+	border: 1px solid black;
+	margin: 3px 11px;
+}
+
+#equipment-block ul li .category-btn{
+	text-align: center;
+	padding: 10px 10px;
+	background: green;
+}
+
+#equipment-block #category-block{text-align: center;}
+
+#equipment-block h2{padding: 18px 0;}
+
+/*ABOUT AND TWITTER FEED*/
+.ab-tf{width: 355px;}
+
+#about-box h2{
+	padding: 0;
+	margin: 18px 0;
+	border-bottom: groove;
+	text-align: center;
+}
+
+#about-box h3{
+	padding: 15px 0 5px 0;
+	text-indent: 10px;
+	font-weight: bold;
+}
+
+#about-box p{
+	padding: 0 10px 10px 10px;
+	text-indent: 12px;
+}
+
+.ab-tf img{
+	width: 80%;
+	margin-left: 10px;
+}
+
+/*FOOTER*/
+footer{
+	background: #292828;
+}
+
+footer a, footer p{
+	color: white;
+}
+
+footer h3, footer h2{color: #74776c;}
+
+footer .fa-cc-paypal, .fa-cc-visa,
+	   .fa-paypal, .fa-cc-mastercard,
+	   .fa-credit-card, .fa-envelope{
+	color: white;
+}
+
+/*footer-info-products-policies*/
+#footer-menus-box{overflow: hidden;}
+
+#footer-menus-box h3{
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+#footer-menus-box div{padding: 25px 35px 14px 0;}
+
+footer #footer-menus-box div li{padding-bottom: 7px;}
+
+/*footer-payment icons*/
+footer #payment-icons{
+	font-size: 35px;
+	padding-top: 80px;
+}
+
+/*footer-newsletter-social media*/
+footer #news-social-box{
+	padding: 25px 0 0 35px;
+}
+
+footer #news-social-box h2{
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+footer #news-social-box div div{
+	padding-top: 5px;
+}
+
+footer #news-social-box input{
+	width: 220px;
+	border: none;
+}
+
+footer #news-social-box .fa-envelope{
+	font-size: 27px;
+
+}
+
+footer #news-social-box div{
+	padding-bottom: 10px;
+}
+
+#footer-social-media p, #footer-social-media .social-media{
+	display: inline-block;
+}
+
+/*footer-social media*/
+#footer-social-media p{
+	padding-top: 7px;
+	padding-left: 15px;
+}
+
+#footer-social-media nav a{
+	font-size: 30px;
+	
+}
+
+#footer-social-media nav{
+	padding-right: 15px;
+}
